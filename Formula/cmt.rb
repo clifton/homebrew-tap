@@ -1,8 +1,6 @@
 # typed: false
 # frozen_string_literal: true
 
-# Homebrew formula for cmt - AI-Powered Git Commit Message Generator
-# To install: brew tap clifton/tap && brew install cmt
 class Cmt < Formula
   desc "CLI tool that generates commit messages using AI"
   homepage "https://github.com/clifton/cmt"
