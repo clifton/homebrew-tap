@@ -1,31 +1,33 @@
 # typed: false
 # frozen_string_literal: true
 
+# Homebrew formula for cmt - AI-Powered Git Commit Message Generator
+# To install: brew tap clifton/tap && brew install cmt
 class Cmt < Formula
   desc "CLI tool that generates commit messages using AI"
   homepage "https://github.com/clifton/cmt"
-  version "0.5.12"
+  version "0.5.13"
   license "MIT"
 
   on_macos do
     on_arm do
       url "https://github.com/clifton/cmt/releases/download/v#{version}/cmt-darwin-arm64"
-      sha256 "76a0bfc48b7ccb99a0168f1c85e02be8ea910a05cdb572524e18a21bf11a33f7"
+      sha256 "f08ec600e53fee0246d46770ebbe41a91b9516ef471f07b48746acbcb73b9ba0"
     end
     on_intel do
       url "https://github.com/clifton/cmt/releases/download/v#{version}/cmt-darwin-amd64"
-      sha256 "bb75a722a9e51eab01fc16cac0a0877cde4fe1667edb8d88852bdd8d81d5ebd0"
+      sha256 "a3181c9a546fb1b9e37596c2510eadd2e68e3f8a2696bf808b38266f8d4566cb"
     end
   end
 
   on_linux do
     on_arm do
       url "https://github.com/clifton/cmt/releases/download/v#{version}/cmt-linux-arm64"
-      sha256 "c7be56cf02d58464d1b95c5610ae9f36c87fbea4582845a726ba231358eec6f9"
+      sha256 "d5c9ea25f46284239416b0926b2dfa473b3b187d5752a689609d1f8957da8eeb"
     end
     on_intel do
       url "https://github.com/clifton/cmt/releases/download/v#{version}/cmt-linux-amd64"
-      sha256 "d6fd3b6381c7f21359d37c2e573004a79f25000a20baf80c626f982cae70c36f"
+      sha256 "be85fccf2cb1ae2723d581590eda36055ed57fa47a0704f84c2f3a91a294c865"
     end
   end
 
