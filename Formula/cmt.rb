@@ -4,28 +4,28 @@
 class Cmt < Formula
   desc "CLI tool that generates commit messages using AI"
   homepage "https://github.com/clifton/cmt"
-  version "0.5.15"
+  version "0.5.16"
   license "MIT"
 
   on_macos do
     on_arm do
       url "https://github.com/clifton/cmt/releases/download/v#{version}/cmt-darwin-arm64"
-      sha256 "f8bfd9f5b4e0274d39d8c62158f2e7ff4aaf85e2ef8e0b1eff8b07d551724735"
+      sha256 "9dacf025ffc8b822a014a48317e5caefb61084c7b20a8a7836050191691fbf03"
     end
     on_intel do
       url "https://github.com/clifton/cmt/releases/download/v#{version}/cmt-darwin-amd64"
-      sha256 "302c790ee0fa0131fab98a326571f5eafc418951ec18ded5289cfba8f8db16a5"
+      sha256 "5123468cabd466a0e10ed0976b9c536036ad25eee3950a94229bc0d7cab8e455"
     end
   end
 
   on_linux do
     on_arm do
       url "https://github.com/clifton/cmt/releases/download/v#{version}/cmt-linux-arm64"
-      sha256 "42c925af2f4638efb7c3408e3151fe5e085b2e1e933cc8a1ec00749ed07b48b3"
+      sha256 "5f78006a82d7cbabbd32dd73abc3f44769a73c92fb9149a4cda0a09a09900247"
     end
     on_intel do
       url "https://github.com/clifton/cmt/releases/download/v#{version}/cmt-linux-amd64"
-      sha256 "14809bd26c92207b468a716956060956a1f20304601e90de4c21d55bbe4d8768"
+      sha256 "a6a0af613e4ef1a685e58d8ad2394d6e1f01aec1016c33757bfba1ae1a66bca5"
     end
   end
 
